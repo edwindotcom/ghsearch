@@ -1,21 +1,16 @@
 import React from "react";
-import "./App.css";
-
-const ghUrl = "https://github.com/search?q="
-
-// const pivotSpacer = mergeStyles({
-//   marginTop: 10
-// });
-// const verticalStyle = mergeStyles({
-//   display:"flex",
-//   justifyContent:"space-between"
-// });
+import { BaseStyles, Box, Heading } from "@primer/components";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        App
+        <BaseStyles>
+          <Box m={4}>
+            <Heading mb={2}>Foo</Heading>
+            <p>This will get Primer text styles.</p>
+          </Box>
+        </BaseStyles>
       </div>
     );
   }
